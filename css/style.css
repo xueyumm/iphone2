@@ -1,0 +1,1868 @@
+*{ margin: 0;padding: 0;}
+a{text-decoration: none;color: #0070c9;}
+li{list-style: none;}
+/*导航条*/
+.header{
+    height: 44px;
+    background: rgba(0,0,0,0.8);
+}
+.header-top{
+    width: 1024px;
+    height: 44px;
+    margin: 0 auto;
+}
+.header-top ul li{
+    display: block;
+    float: left;
+    width: 113px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+}
+.header-top ul li a{
+    color: #fff;
+}
+.header-top ul li a:hover{
+    color: #ccc;
+}
+.header-top ul li a span.apple{
+    font-size: 20px;
+}
+.header-top ul li a span.top-txt{
+    font-size: 13px;
+}
+.active{
+    color: #ccc !important;
+}
+/*轮播*/
+.slide_wrapper{
+        position:relative;
+        width:100%;
+        height:86%;
+        overflow:hidden
+}
+.gallery_slide_wrapper{
+        position:relative;
+        width:100%;
+        height:100%;
+        transition:all .7s ease-in-out
+}
+.gallery_item{
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:1;
+        overflow:hidden;
+        width:100%;
+        height:100%;
+        color:#333;
+        will-change:transform;
+        transition:all .7s ease-in-out;
+        -webkit-transform:translate3d(100%,0,0);
+                transform:translate3d(100%,0,0);
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner1{
+    width: 100%;
+    height: 100%;
+}
+.iPhone{
+    /*width: 165px;*/
+    height: 70px;
+    position: absolute;
+    top:78px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.iPhone span{
+    display: block;
+    /*width: 165px;*/
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-family: "微软雅黑";
+}
+.iPhone span.iPhone7{
+    font-size: 34px;
+}
+.banner2{
+    width: 100%;
+    height: 100%;
+}
+
+.watch span{
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-weight: 600;
+}
+.watch span i{
+    font-size: 30px;
+}
+.watch span.watch2{
+    font-size: 14px;
+    font-weight: 0;
+    height: 20px;
+    line-height: 20px;
+}
+.watch1{
+    height: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.macbook{
+    height: 25%;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 auto;     
+}
+.banner3{
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+}
+.macbook span{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto; 
+}
+.macbook span.macbook1{
+    padding-top: 30px;
+}
+.macbook span.macbook2{
+    height: 40px;
+    font-size: 32px;
+}
+
+.gallery_item.zIndex{
+        z-index:0
+}
+.gallery_item.zIndexTop{
+        z-index:3
+}
+.gallery_item_content{
+    position:absolute;
+    z-index:1000;
+    top:0;
+    height:100%;
+    width:100%;
+    text-align:center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.nav_btn{
+    opacity:0;
+    top:0;
+    position:absolute;
+    cursor:pointer;
+    width:20%;
+    height:100%;
+    z-index:3;
+}
+.nav_btn:hover{
+    opacity:.5;
+}
+.nav_btn.left{
+    left:0;
+}
+.nav_btn.left .btn_left{
+    position: absolute;
+    top:50%;
+    left:50px;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: rgba(180,180,180,0.25);
+    color: #848484;
+    line-height: 65px;
+    text-align: center;
+    margin-left: -30px;
+    margin-top: -50px;
+}
+.nav_btn.left .btn_left:after{
+    font-size: 57px;
+    font-family: "SF Pro Icons";
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    content: "<";
+    padding-right: 6px;
+}
+.nav_btn.right{
+        right:0;
+}
+.nav_btn.right .btn_right{
+    position: absolute;
+    top:50%;
+    right:50px;
+    margin-left: -30px;
+    margin-top: -50px;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: rgba(180,180,180,0.25);
+    color: #848484;
+    line-height: 65px;
+}
+.nav_btn.right .btn_right:after{
+    font-size: 57px;
+    font-family: "SF Pro Icons";
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: 57px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    content: ">";
+    padding: 0px 14px;
+}
+.nav{
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    -webkit-transform:translateX(-50%);transform:translateX(-50%);
+    list-style-type:none;
+    z-index:10;
+}
+.nav_slide{
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:2px;
+    background:#fff;
+    background:rgba(128,128,128,.2);
+    margin-left:10px;
+    cursor:pointer;
+}
+.nav_slide:before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    height:2px;
+    background:0 0;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;
+}
+.nav_slide.active:before{
+    width:100%;
+}
+.nav_slide:after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:-9px;
+    width:100%;
+    height:20px;
+}
+.nav_slide:first-child{
+    margin-left:0;
+}
+.nav_slide .slide_btn{
+    width:100%;
+    height:2px;
+    background-color:transparent;
+}
+.nav_slide.active .slide_btn{
+    background:gray;
+}
+.nav_slide.autoplay .slide_btn{
+    background:gray;
+    -webkit-animation:scaleX 5s linear;
+    -webkit-animation-fill-mode:forwards;transform-origin:0;
+    -moz-animation:scaleX 5s linear;
+    -moz-animation-fill-mode:forwards;transform-origin:0;
+}
+@-webkit-keyframes scaleX{
+0%{
+    -webkit-transform:scaleX(0)
+}
+100%{
+    -webkit-transform:scaleX(1)
+}
+}
+@-moz-keyframes scaleX{
+0%{
+    -moz-transform:scaleX(0)
+}
+100%{
+    -moz-transform:scaleX(1)
+}
+}
+/*四张图片*/
+.fore-page{
+    height: 204px;
+    line-height: 204px;
+}
+.fore-page ul{
+    height: 200px;
+    padding-top: 2px;
+}
+.fore-page ul li{
+    float: left;
+    width: 25%;
+    height: 200px;
+    overflow: hidden;
+}
+.fore-page ul li img{
+    width: 100%;
+    height: 100%;
+}
+/*尾部*/
+.foot{
+    height: 450px;
+}
+.foot-content{
+    width: 1024px;
+    height: 450px;
+    margin: 0 auto;
+}
+.foot-content .foot-p{
+    width: 1024px;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 50px;
+    color: #888;
+}
+.foot-directory{
+    width: 1024px;
+    height: 234px;
+    padding-top: 20px;
+}
+.foot-directory ul li{
+    width: 204.8px;
+    height: 234px;
+    float: left;
+}
+.foot-directory ul li h5{
+    width: 204.8px;
+    height: 15px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #333;
+}
+.directory-one ul li{
+    width: 204.8px;
+    height: 22px;
+    line-height: 22px
+}
+.directory-one ul li a{
+    color:#555;
+    font-size: 12px;
+    text-decoration：underline;
+}
+.directory-one ul li a:hover{
+    border-bottom: 1px solid #555;
+}
+.directory-three{
+    height: 80px;
+}
+.directory-fore{
+    height: 100px;
+}
+.foot-more{
+     margin-top: 20px;
+}
+.foot-more p span a:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.foot-bottom{
+    width:1024px;
+    height: 30px;
+    margin-top: 5px;
+}
+.foot-bottom .bottom-left{
+    width: 752px;
+    height: 30px;
+    float: left;
+}
+.bottom-left .foot-left-one{
+    display: block;
+    width: 252px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #888;
+    float: left;
+}
+.bottom-left .foot-left-two{
+    width: 500px;
+    height: 20px;
+    margin-top: 5px;
+    float: right;
+}
+.bottom-left .foot-left-two ul li{
+    width: 85px;
+    height: 20px;
+    border-right:1px solid #ddd;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    
+}
+.bottom-left .foot-left-two ul li.last{
+    border: 0;
+}
+.bottom-left .foot-left-two ul li a{
+    color: #555;
+}
+.bottom-left .foot-left-two ul li a:hover{
+    border-bottom: 1px solid #555;
+}
+.foot-bottom .bottom-right{
+    width: 52px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+}
+.foot-bottom .bottom-right a.bot-img{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 16px;
+    margin-top: 7px;
+}
+.foot-bottom .bottom-right a span{
+    font-size: 12px;
+    color: #555;
+}
+.foot-bottom .bottom-right a span:hover{
+    border-bottom: 1px solid #555;
+}
+.bottom-last{
+    width: 1024px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #888;
+}
+.bottom-last p a{
+    font-size: 12px;
+    color: #888;
+}
+
+/*Mac页面*/
+.nav-chapter{
+    width: 100%;
+    height: 86px;
+    background: rgba(242,242,242,0.7);
+    padding-top: 11px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.chapter-wrapper{
+    width:765px;
+    height: 86px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation:movefirst 1s ease-in;
+    -wibkit-animation:movefirst 1s ease-in; 
+}
+@keyframes movefirst{
+    from {right:-300px;}
+    to {right:0px;}
+}
+@-webkit-keyframes movefirst{
+    from {right:-300px;}
+    to {right:0px;}
+}
+.chapter-wrapper li{
+    float: left;
+    width: 85px;
+    height: 86px;
+}
+.chapter-wrapper li a .chapter-item{
+    width: 46px;
+    height: 54px;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
+.chapter-wrapper li a .chapter-item1{
+   background-image: url(../images/top1.png); 
+}
+.chapter-wrapper li a .chapter-item2{
+   background-image: url(../images/top2.png);
+   width: 48px; 
+   background-size: 48px 54px; 
+}
+.chapter-wrapper li a .chapter-item3{
+   background-image: url(../images/top3.png);
+   background-size: 55px 54px;
+   width: 55px; 
+}
+.chapter-wrapper li a .chapter-item4{
+   background-image: url(../images/top4.png);
+   background-size: 48px 54px; 
+   width: 48px;
+}
+.chapter-wrapper li a .chapter-item5{
+   background-image: url(../images/top5.png);
+   width: 19px; 
+   background-size: 19px 54px;
+}
+.chapter-wrapper li a .chapter-item6{
+   background-image: url(../images/top6.png);
+   width: 25px; 
+   background-size: 25px 54px; 
+}
+.chapter-wrapper li a .chapter-item7{
+   background-image: url(../images/top7.png);
+   width: 30px; 
+   background-size: 30px 54px; 
+}
+.chapter-wrapper li a .chapter-item8{
+   background-image: url(../images/top8.png);
+}
+.chapter-wrapper li a .chapter-item9{
+   background-image: url(../images/top9.png);
+   background-size: 60px 54px;
+   width: 60px;
+}
+.chapter-wrapper li span{
+    display: block;
+    width:85px;
+    height: 20px;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.chapter-wrapper li p.chapter-new{
+    color:#e85d00;
+    font-size: 12px;
+    width:85px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.bg-content1{
+    height: 698px;
+    background: -webkit-linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    background: linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    font-family: "宋体";
+}
+.bg-content1 .content1-title{
+    height: 147px;
+    padding-top: 85px;
+    color: #333;
+}
+.content1-title h3{
+    height: 47px;
+    line-height: 47px;
+    font-size: 34px;
+    text-align: center;
+} 
+.content1-title h1{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+} 
+.content1-title p{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.content1-title p a{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.content1-title p a:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.content1-title-img{
+    height: 466px;
+}
+.bg-content2{
+    height: 688px;
+    background: -webkit-linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    background: linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    font-family: "宋体";
+}
+.content2-title{
+    height: 172px;
+    color: #333;
+    padding-top: 85px;
+    padding-bottom: 36px;
+}
+.content2-title h3{
+    height: 48px;
+    font-size: 34px;
+    line-height: 48px;
+    text-align: center;
+}
+.content2-title h1{
+    height: 58px;
+    line-height: 58px;
+    font-size: 40px;
+    text-align: center;
+}
+.content2-title p{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 20px;
+}
+.content2-title p a:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.content2-title-img{
+    height:306px;
+    text-align: center; 
+}
+.bg-content4{
+    height: 1166px;
+    background: -webkit-linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    background: linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    font-family: "宋体";
+}
+.img-mac4{
+    padding-bottom: 40px;
+    height: 478px;
+}
+.content4-bot{
+    height: 356px;
+}
+.content4-cont{
+    width: 1024px;
+    height:236px;
+    margin: 0 auto; 
+    border-top:1px solid #D6D6D6;
+}
+.content4-cont a span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.content4-leave{
+    width: 512px;
+    height: 236px;
+    float: left;
+    padding-top:60px;
+    padding-bottom: 60px;
+    color: #333;
+    text-align: center;
+}
+.leave-img1{
+    height: 44px;
+}
+.content4-leave h3{
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+.content4-leave p{
+    height: 50px;
+    font-size: 14px;
+}
+.content4-leave a{
+    display: block;
+    height: 20px;
+    font-size: 14px;
+}
+.content4-deliver{
+    width: 512px;
+    height: 236px;
+    float: right;
+    padding-top:60px;
+    padding-bottom: 60px;
+    color: #333;
+    text-align: center;
+}
+.content4-deliver p{
+    height: 30px;
+    font-size: 14px;
+}
+.bg-content5{
+    height: 700px;
+    background: -webkit-linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    background: linear-gradient(#fff, #FDFDFD, #F7F7F7);
+    font-family: "宋体";
+}
+.content5-title{
+    height: 100px;
+    padding-top: 78px;
+    text-align: center;
+}
+.content5-title h1{
+    height: 58px;
+    line-height: 58px;
+    font-size: 40px;
+}
+.content5-title p{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+}
+.content5-title p a:hover{
+    border-bottom: 1px solid #0070c9;
+} 
+.content5-title-img{
+    height: 389px;
+}
+.img-mac6{
+    padding-top: 78px;
+    height: 368px;
+    padding-bottom: 0;
+}
+.bg-content6{
+    height: 714px;
+}
+.content6-bot{
+    height: 196px;
+    margin-top: 35px;
+}
+.content6-cont{
+    width: 980px;
+    height: 196px;
+    margin: 0 auto;
+}
+.content6-cont a span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.content6-leave{
+    float: left;
+    width: 326px;
+    height: 196px;
+    color: #333;
+    padding-left: 164px;
+}
+.content6-leave h3{
+    height: 50px;
+    font-size: 32px;
+    line-height: 50px;
+}
+.content6-leave p{
+    height: 108px;
+    font-size: 16px;
+    line-height: 1.3;
+    overflow: hidden;
+}
+.content6-leave a{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+}
+.content6-deliver{
+    float: right;
+}
+
+.content6-deliver p{
+    height: 72px;
+}
+
+/*内置APP*/
+.inlay-app{
+    height: 242px;
+}
+.inlay-title{
+    width: 980px;
+    height: 125px;
+    padding-top: 78px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.inlay-title h1{
+    color: #333;
+    font-size:40px; 
+    height: 60px;
+    line-height: 60px;
+    font-family: "宋体";
+}
+.inlay-title p{
+    height: 60px;
+    margin-top:20px; 
+}
+.inlay-img{
+    height:800px; 
+}
+.inlay-images{
+    height: 170px;
+    padding-bottom: 50px;
+}
+.inlay-images ul{
+    width: 800px;
+    height: 112px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.inlay-images ul li{
+    float: left;
+    width: 114px;
+    height: 112px;
+    text-align: center;
+}
+.xueyu{
+    border-bottom: 1px solid #333;
+}
+.inlay-images ul li span{
+    display: block;
+    height: 25px;
+    font-size: 14px;
+    color: #333;
+    margin: 0 auto;
+}
+.inlay-neirong{
+    width: 1124px;
+    height: 540px;
+    margin: 0 auto;
+}
+.inlay-content{
+    display: none;
+}
+.inlay-content-left{
+    width: 670px;
+    height: 540px;
+    float: left;
+}
+.inlay-content-right{
+    width: 400px;
+    height: 540px;
+    float: right;
+    margin-left: 54px;
+    font-family: "宋体";
+}
+.inlay-content-right h1{
+    padding-left:20px;
+}
+.inlay-content-right p{
+    width: 380px;
+    height: 114px;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.inlay-content-right a{
+    padding-left:20px;
+}
+.inlay-content-right a span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+/*专业APP*/
+.inlay-images2{
+    height: 170px;
+    padding-bottom: 50px;
+}
+.inlay-images2 ul{
+    width: 572px;
+    height: 112px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.inlay-images2 ul li{
+    float: left;
+    width: 114px;
+    height: 112px;
+    text-align: center;
+}
+.xueyu2{
+    border-bottom: 1px solid #333;
+}
+.inlay-images2 ul li span{
+    display: block;
+    height: 25px;
+    font-size: 14px;
+    color: #333;
+    margin: 0 auto;
+}
+.inlay-neirong2{
+    width: 1124px;
+    height: 540px;
+    margin: 0 auto;
+}
+.inlay-content2{
+    display: none;
+}
+.inlay-content-left2{
+    width: 400px;
+    height: 540px;
+    float: left;
+}
+.inlay-content-right2{
+    width: 670px;
+    height: 360px;
+    float: right;
+    font-family: "宋体";
+}
+.inlay-content-right2 img{
+    width: 100%;
+    height: 100%;
+}
+/*教育应用*/
+.apply{
+    height: 1821px;
+     font-family: "宋体";
+}
+.apply-img{
+    height: 600px;
+    background-size: 100% 600px;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+.apply-one{
+    background-image: url(../images/mac23.jpg);
+}
+.apply-two{
+    background-image: url(../images/mac24.jpg);
+}
+.apply-three{
+    background-image: url(../images/mac25.jpg);
+}
+.apple-one1{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+.apple-one2{
+    margin-top: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.apple-one3{
+    display: block;
+}
+.apple-one3 span{
+    margin-left: 14px;
+}
+.apple-one3 span:hover{
+    border-bottom: 1px solid #fff;
+}
+.apple-one4{
+    height: 100px;
+    line-height: 42px;
+}
+.apple-one5{
+    height: 65px;
+    line-height: 30px;
+}
+/*页尾*/
+.foot-bottom .bottom-right a.bot-img2{
+    margin-top: 3px;
+}
+.foot-p2 p{
+    color: #555;
+    font-size: 14px;
+}
+.foot-p2 p i{
+    font-size: 18px;
+}
+.foot-p2 p span{
+    color: #DBDBDB;
+    font-size: 20px;
+}
+
+/*iPad页面*/
+/*导航*/
+.chapter-page1{
+   background-image: url(../images/ipad1.png);
+}
+.chapter-page2{
+   background-image: url(../images/ipad2.png);
+}
+.chapter-page3{
+   background-image: url(../images/ipad3.png);
+}
+.chapter-page4{
+   background-image: url(../images/ipad3.png);
+}
+.chapter-page5{
+   background-image: url(../images/ipad4.png);
+}
+.chapter-page6{
+   background-image: url(../images/ipad5.png);
+}
+.chapter-page7{
+   background-image: url(../images/ipad6.png);
+}
+.chapter-wrapper2{
+    width: 596px;
+}
+/*图文*/
+.content2-title-ipad1 h2{
+    text-align: center;
+    font-size: 34px;
+}
+.content2-title-ipad1 h1{
+    font-size: 46px;
+    font-family: "微软雅黑"
+}
+.bg-content2-ipa{
+    height: 766px;
+    background:#FAFAFA;
+}
+.ipad-content1{
+    height: 567px;
+    background: #FAFAFA;
+}
+.ipad-cont1{
+    width: 1024px;
+    height: 567px;
+    margin:0 auto;
+    position: relative;
+}
+.ipad-content1-img{
+    width: 814px;
+    height: 630px;
+    margin-left: 211px;
+    padding-top: 58px;
+}
+.ipad-content1-txt{
+    width: 320px;
+    height: 160px;
+    position: absolute;
+    top: 70px;
+    left: 106px;
+    font-family: "宋体";
+    color: #333;
+    text-align: center;
+}
+.ipad-content1-txt h1{
+    height: 60px;
+    line-height: 60px;
+    font-size: 46px;
+    font-family: "微软雅黑"
+}
+.ipad-content1-txt h2{
+    height: 40px;
+    line-height: 40px;
+    font-size: 34px;
+}
+.ipad-content1-txt p{
+    height: 40px;
+    line-height: 40px;
+}
+.ipad-content1-txt p a span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.ipad-content2{
+    height: 746px;
+}
+.ipad-cont2{
+    width: 1258px;
+    height: 746px;
+}
+.ipad-content1-img2{
+    width: 814px;
+    height: 630px;
+    margin-right: 211px;
+    padding-top: 58px;
+}
+.ipad-cont2 .ipad-content1-txt2{
+    width: 396px;
+    height: 160px;
+    position: absolute;
+    top: 176px;
+    right: 140px;
+    font-family: "宋体";
+    color: #333;
+    text-align: center;
+}
+.ipad-content1-txt2 h1{
+    height: 60px;
+    line-height: 60px;
+    font-size: 46px;
+    font-family: "微软雅黑"
+}
+.ipad-content1-txt2 h2{
+    height: 40px;
+    line-height: 40px;
+    font-size: 34px;
+}
+.ipad-content1-txt2 p{
+    height: 40px;
+    line-height: 40px;
+}
+.ipad-content1-txt2 p a span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.ipad-full1{
+    height: 450px;
+    background-size: 2269px 319px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #fafafa;
+    padding-top: 100px;
+    background-image: url(../images/ipad-full1.png);
+}
+.ipad-full1-content{
+    width: 700px;
+    height: 450px;
+    margin: 0 auto;
+    font-family: "宋体";
+    text-align: center;
+}
+.ipad-full1-content h2{
+    height: 60px;
+    line-height: 60px;
+    font-size: 34px;
+    padding-top: 20px;
+}
+.ipad-full1-content p{
+    height: 60px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.ipad-full1-content a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.ipad-full1-content a span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.ipad-content4{
+    background: #fff;
+    padding-top: 100px;
+}
+.ipad-content1-txt4{
+    width: 354px;
+}
+.bg-content5-ipa{
+    background: #fff;
+    height: 1304px;
+}
+.ipad-full3{
+    height: 700px;
+    background-size: 1232px 420px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #F2F2F2;;
+    padding-top: 100px;
+    background-image: url(../images/ipad-full3.png);
+}
+.ipad-full3-content p{
+    height: 30px;
+}
+.ipad-full3-content .ipad-ten{
+    height: 85px;
+    text-align: center;
+}
+.ipad-full4{
+    height: 440px;
+    margin-top: 10px;
+    padding-top: 93px;
+    padding-bottom: 74px;
+    background-size: 1232px 270px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #F2F2F2;
+    background-image: url(../images/ipad-full4.png);
+}
+.ipad-content4-bot{
+    border-top: 0;
+    padding-top: 70px;
+}
+.ipad-content4-bot h3{
+    font-size: 16px;
+}
+.ipad-content4-bot p{
+    font-size: 12px;
+}
+.ipad-content4-bot a span{
+    font-size: 12px;
+}
+.apply2{
+    height: 2492px;
+     font-family: "宋体";
+}
+.ipad-one1{
+    background-image: url(../images/ipad-b1.png);
+    width: 100%;
+}
+.ipad-one2{
+    background-image: url(../images/ipad-b2.png);
+}
+.ipad-one3{
+    background-image: url(../images/ipad-b3.png);
+}
+.ipad-one4{
+    background-image: url(../images/ipad-b4.png);
+}
+.ipad-apple-one2{
+    margin-top: 220px;
+}
+.ipad-one1 h1{
+    color: #333;
+}
+.ipad-one1 p{
+    color: #333;
+}
+.ipad-one1 a span{
+    color: #0070c9;
+}
+.ipad-one1 .ipad-apple-one4 span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+/*iPhone页面*/
+/*导航*/
+.chapter-project1{
+   background-image: url(../images/iphone-top1.png);
+}
+.chapter-project2{
+   background-image: url(../images/iphone-top1.png);
+}
+.chapter-project3{
+   background-image: url(../images/iphone-top3.png);
+}
+.chapter-project4{
+   background-image: url(../images/iphone-top4.png);
+}
+.chapter-project5{
+   background-image: url(../images/iphone-top5.png);
+}
+.chapter-project6{
+   background-image: url(../images/iphone-top6.png);
+}
+.chapter-wrapper3{
+    width: 514px;
+}
+.chapter-wrapper3 li a span{
+    color: #fff;
+}
+.chapter-wrapper3 li a p.chapter-new2{
+    color: #6bf;
+}
+.nav-chapter-iphone{
+    background-color: #141414;
+}
+/*图文*/
+.bg-content2-iphone{
+    height: 816px;
+    background: #000;
+}
+.content2-title-iphone1{
+   text-align: center;  
+}
+.content2-title-iphone1 h1{
+    color: #fff;
+    font-size: 48px;
+}
+.content2-title-iphone1 h2{
+    color: #fff;
+    font-size: 34px; 
+}
+.content2-title-iphone1 a.iphone-buy1{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+.content2-title-iphone1 a.iphone-buy1 span:hover{
+    border-bottom: 1px solid #0070c9;
+}
+.content2-title-iphone1 p{
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.iphone-airpods{
+    width: 1350px;
+    height: 950px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "宋体"
+}
+.iphone-airpods-left{
+    width: 650px;
+    height: 950px;
+    float: left;
+    background: #fff;
+}
+.iphone-airpods-right{
+    width: 650px;
+    height: 950px;
+    float: right;
+    text-align: center;
+    background: #121212;
+    color: #fff;
+}
+.airpods-left-text{
+    text-align: center;
+}
+.airpods-left-text h3{
+    height: 40px;
+    line-height: 40px;
+    padding-top: 68px;
+    font-size: 28px;
+}
+.airpods-left-text h1{
+    height: 50px;
+    font-size: 36px;
+    line-height: 50px;
+}
+.airpods-left-text a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #1F80F0;
+}
+.airpods-left-text img{
+    padding-top: 40px;
+}
+.airpods-left-text a span:hover{
+    border-bottom: 1px solid #1F80F0;
+}
+/*iPhone 机型比较*/
+.section-compare{
+    height: 560px;
+    background: #fff;
+    text-align: center;
+}
+.section-compare h2{
+    height: 60px;
+    line-height: 60px;
+    font-size: 34px;
+    padding-top: 68px;
+}
+.section-compare a{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+}
+.section-compare a span:hover{
+    border-bottom: 1px solid #1F80F0;
+}
+.iphone-7-img{
+    width: 1010px;
+    margin:0 auto;
+    padding-top: 60px;
+}
+.iphone-7-img li{
+    float: left;
+    margin-right: 35px;
+}
+.iphone-7-img .iphone-se{
+    margin-right: 0;
+}
+.iphone-7-img li p{
+    padding-top: 20px;
+}
+/*iPhone 新计划*/
+ .iphone-airpods2{
+    height: 814px;
+ }
+.iphone-airpods-left2{
+    height: 814px;
+}
+.iphone-airpods-right2{
+    height: 814px;
+    background: #fff;
+    color: #333;
+    overflow: hidden;
+}
+.airpods-left-text2 h3{
+    height: 82px;
+    font-size: 36px;
+    padding-bottom: 70px;
+}
+.airpods-left-text2 img{
+    padding-top: 0;
+}
+.iphone-airpods-text5{
+    width: 354px;
+    height: 200px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+    margin-top: -84px;
+}
+.iphone-airpods-text5 li{
+    height: 34px;
+    line-height: 34px;
+}
+.iphone-airpods-text5 li span{
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.iphone-airpods-text5 li p{
+    display: inline-block;
+}
+.iphone-airpods-text5 li{
+    text-align: left;
+}
+.iphone-airpods-text5 li a span{
+    font-size: 14px;
+}
+.iphone-airpods-text5 li a:hover{
+    border-bottom: 0;
+}
+.airpods-left-text3 h3{
+    height: 90px;
+    font-size: 36px;
+}
+.airpods-left-text3 p{
+    height: 90px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.airpods-left-text3 a span:hover{
+    border-bottom: 1px solid #1F80F0;
+}
+.buy-iphone{
+    width: 1350px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "宋体";
+    background-image: url(../images/iphone11.png);
+    position: relative;
+    color: #333;
+}
+.how-buyiphone h3{
+    padding-top: 312px;
+    font-size: 36px;
+    width: 503px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+}
+.how-buyiphone a{
+    display: block;
+    width: 503px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.how-transfer{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*Pay*/
+.iphone-pay-cont{
+    height: 480px;
+    background: #FAFAFA;
+    margin-top: 50px;
+}
+.iphone-pay{
+    width: 980px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.iphone-pay-left{
+    float: left;
+    overflow: hidden;
+}
+.iphone-pay-left img{
+    padding-left: 100px;
+    padding-top: 8px;
+}
+.iphone-pay-right{
+    width: 530px;
+    text-align: center;
+    float: right;
+    padding-top: 156px;
+    padding-bottom: 156px; 
+}
+.iphone-pay-right p{
+    font-size: 34px;
+}
+.iphone-pay-right p span{
+    font-size: 34px;
+}
+.pay-right-user{
+    display: block;
+    height: 82px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.iphone-pay-right a span{
+    font-size: 14px;
+}
+.iphone-pay-right a span:hover{
+    border-bottom: 1px solid #1F80F0;
+}
+/*iPhone 商务应用*/
+.apply-iphone{
+    height: 505px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.apply-one-iphone{
+    background-image: url(../images/iphone13.png);
+    height: 505px;
+}
+.apple-one1-iphone2{
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+} 
+.apply-one-iphone h1{
+    padding-top: 210px;
+}
+.apple-one1-iphone3{
+    color: #1F80F0;
+}
+.apple-one1-iphone2 span:hover{
+    border-bottom: 1px solid #1F80F0;
+}
+/*尾部*/
+.foot-content .foot-p3{
+    border-bottom: 0;
+    border-top: 1px solid #ddd;
+}
+.foot-text{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 11px;
+    color: #888;
+}
+/*Watch页面*/
+.nav-chapter5{
+    background: #fff;
+}
+.chapter-wrapper5 li a .chapter-watch1{
+   background-image: url(../images/watch-top1.png);
+   width: 26px;
+}
+.chapter-wrapper5 li a .chapter-watch2{
+   background-image: url(../images/watch-top2.png);
+   width: 26px;
+}
+.chapter-wrapper5 li a .chapter-watch3{
+   background-image: url(../images/watch-top3.png);
+   width: 38px;
+}
+.chapter-wrapper5 li a .chapter-watch4{
+   background-image: url(../images/watch-top4.png);
+   width: 26px;
+}
+.chapter-wrapper5 li a .chapter-watch5{
+   background-image: url(../images/watch-top5.png);
+   width: 26px;
+}
+.chapter-wrapper5 li a .chapter-watch6{
+   background-image: url(../images/watch-top6.png);
+   width: 44px;
+}
+.chapter-wrapper5 li a .chapter-watch7{
+   background-image: url(../images/watch-top7.png);
+   width: 26px;
+}
+.chapter-wrapper5 li a .chapter-watch8{
+   background-image: url(../images/watch-top8.png);
+   width: 52px;
+}
+.chapter-wrapper5 li a .chapter-watch9{
+   background-image: url(../images/watch-top9.png);
+   width: 40px;
+}
+.chapter-wrapper5{
+    width: 848px;
+}
+.chapter-wrapper5 li{
+    width: 94px;
+}
+ /*图文*/
+ .bg-content1-watch1{
+    height: 700px;
+ }
+ .content1-title-watch{
+    background:#F2F2F2; 
+ }
+ .watch-img1{
+    text-align: center;
+    padding-top: 30px;
+ }
+ .content1-title-watch p{
+    text-align: center;
+    height: 40px;
+    line-height:40px;
+ }
+ .content1-title-img5{
+    height: 700px;
+    background-image: url(../images/watch1.png);
+    background-size: 100% 700px;
+ }
+ .watch-airpods-left{
+   background: #f2f2f2;
+   overflow: hidden;
+ }
+ .airpods-left-watch1 a span{
+    margin-right: 10px;
+ }
+ .watch-img2{
+    padding-top: 100px;
+    overflow: hidden;
+ }
+ .section-compare-watch{
+    background: #f2f2f2;
+    height: 795px;
+ }
+ .section-compare-watch h3{
+    padding-top: 0;
+    height: 50px;
+    line-height: 50px;
+ }
+ .watch-img3{
+    padding-top: 70px;
+ }
+ .watch-img4{
+    padding-top: 0;
+ }
+ .section-compare-watch2{
+    height: 820px;
+    background: #fff;
+ }
+ .section-compare-watch2 h1{
+    padding-top: 30px;
+ }
+ .watch-img5{
+    padding-top: 0;
+ }
+ .watch-img5 img{
+    padding-top: 0;
+ }
+ .watch-airpods2{
+    background: #fff;
+ }
+ .airpods-left-text .heshi{
+    color: #000;
+    padding-top: 30px;
+ }
+ .watch-img6{
+    width: 1350px;
+    height: 452px;
+    background: #f2f2f2;
+ }
+ .someadress{
+    font-size: 12px;
+    color: #888;
+ }
+ /*Music页面*/
+ .head{
+    background-image: url(../images/music2.png);
+    height: 1000px;
+    background-size: cover;
+    background-position: 50% 50%;
+ }
+.chapter-wrapper li a .chapter-music1{
+    background-image: url(../images/music-top1.png);
+    width: 30px;
+}
+.chapter-wrapper li a .chapter-music2{
+    background-image: url(../images/music-top2.png);
+    width: 32px;
+}
+.chapter-wrapper li a .chapter-music3{
+    background-image: url(../images/music-top3.png);
+    width: 26px;
+}
+.chapter-wrapper li a .chapter-music4{
+    background-image: url(../images/music-top4.png);
+    width: 34px;
+}
+.chapter-wrapper li a .chapter-music5{
+    background-image: url(../images/music-top5.png);
+    width: 34px;
+}
+.music-banner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: 848px;
+}
+.music-img1{
+    width: 210px;
+    padding-top: 250px;
+    color: #fff;
+}
+.music-happy{
+    display: block;
+    width: 150px;
+    height: 54px;
+    font-size: 40px;
+
+}
+.music-img1 .music-mianfei{
+    display: block;
+    width: 172px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #FF365D;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.music-img1 .music-know{
+    display: block;
+    width: 152px;
+    color: #fff;
+    font-size: 12px;
+}
+.music-img1 .music-know:hover{
+    border-bottom: 1px solid #fff;
+}
+.music-section{
+    height: 1430px;
+}
+.music-content{
+    width: 1120px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    position:relative;
+    top: -168px;
+}
+.music-content-top{
+    width: 980px;
+    height: 1422px;
+    padding-top: 68px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.music-content-top h1{
+    padding-bottom: 60px;
+    font-size: 34px;
+    color: #333;
+}
+.music-contenttop-copy{
+    height: 662px;
+}
+.copy-row1{
+    width: 475px;
+    height: 662px;
+    float: left;
+}
+.copy-row2{
+    width: 475px;
+    height: 662px;
+    float: right;
+}
+.copy-text1{
+    height: 137px;
+    color: #333;
+}
+.copy-text1 .copy-zhuanji{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+.copy-text1 h2{
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+}
+.copy-text1 a{
+    color: #888;
+    font-size: 12px;
+}
+.copy-text1 a:hover{
+    border-bottom: 1px solid #888;
+}
+.music-airpot{
+    height: 1008px;
+    background: #F5FDF1;
+}
+.music-airpot-content{
+    width: 914px;
+    height: 1008px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.music-airpot-left{
+    width: 326px;
+    height: 180px;
+    float: left;
+    color: #333;
+    position: relative;
+    top:312px;
+}
+.music-airpot-left p{
+    font-size: 18px;
+}
+.music-airpot-left h2{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.music-airpot-left a{
+    color:#333;
+    font-size: 14px;
+}
+.music-airpot-left a:hover{
+    border-bottom: 1px solid #333;
+}
+.music-airpot-right{
+    width: 571px;
+    height: 940px;
+    float: right;
+}
+.music-apple{
+    height: 1126px;
+    background: #fff;
+}
+.music-column{
+    width: 980px;
+    height: 290px;
+    margin: 0 auto;
+}
+.music-column li{
+    width: 245px;
+    height: 290px;
+    float: left;
+    color: #333;
+}
+.music-column li p{
+    padding-right: 30px;
+    height: 48px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.music-column li h3{
+    height: 50px;
+    line-height: 50px;
+}
+.music-column li a{
+    color: #333;
+    font-size: 13px;
+}
+.music-column li a:hover{
+    border-bottom: 1px solid #333;
+}
